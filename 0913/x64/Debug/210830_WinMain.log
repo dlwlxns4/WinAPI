@@ -1,0 +1,31 @@
+﻿  Ammo.cpp
+C:\Users\KGA_11_PM\Downloads\210910_WinMain (1)\Ammo.cpp(56,49): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\KGA_11_PM\Downloads\210910_WinMain (1)\Ammo.cpp(64,39): warning C4305: '-=': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\KGA_11_PM\Downloads\210910_WinMain (1)\Ammo.cpp(65,40): warning C4305: '+=': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\KGA_11_PM\Downloads\210910_WinMain (1)\Ammo.cpp(76,22): warning C4244: '=': 'FLOAT'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\KGA_11_PM\Downloads\210910_WinMain (1)\Ammo.cpp(77,21): warning C4244: '=': 'FLOAT'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\KGA_11_PM\Downloads\210910_WinMain (1)\Ammo.cpp(78,23): warning C4244: '=': 'FLOAT'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\KGA_11_PM\Downloads\210910_WinMain (1)\Ammo.cpp(79,24): warning C4244: '=': 'FLOAT'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\KGA_11_PM\Downloads\210910_WinMain (1)\Ammo.cpp(98,19): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\KGA_11_PM\Downloads\210910_WinMain (1)\Ammo.cpp(102,26): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\KGA_11_PM\Downloads\210910_WinMain (1)\Ammo.cpp(107,38): warning C4305: '-=': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\KGA_11_PM\Downloads\210910_WinMain (1)\Ammo.cpp(111,38): warning C4305: '+=': 'double'에서 'float'(으)로 잘립니다.
+  MainGame.cpp
+C:\Users\KGA_11_PM\Downloads\210910_WinMain (1)\MainGame.cpp(26,51): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\KGA_11_PM\Downloads\210910_WinMain (1)\MainGame.cpp(43,42): warning C4267: '인수': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\KGA_11_PM\Downloads\210910_WinMain (1)\MainGame.cpp(46,42): warning C4267: '인수': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  Tank.cpp
+C:\Users\KGA_11_PM\Downloads\210910_WinMain (1)\Tank.cpp(11,21): warning C4244: '=': 'FLOAT'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\KGA_11_PM\Downloads\210910_WinMain (1)\Tank.cpp(12,20): warning C4244: '=': 'FLOAT'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\KGA_11_PM\Downloads\210910_WinMain (1)\Tank.cpp(19,37): warning C4305: '=': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\KGA_11_PM\Downloads\210910_WinMain (1)\Tank.cpp(42,21): warning C4244: '=': 'FLOAT'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\KGA_11_PM\Downloads\210910_WinMain (1)\Tank.cpp(43,20): warning C4244: '=': 'FLOAT'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\KGA_11_PM\Downloads\210910_WinMain (1)\Tank.cpp(88,26): warning C4244: '인수': 'FLOAT'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\KGA_11_PM\Downloads\210910_WinMain (1)\Tank.cpp(88,19): warning C4244: '인수': 'FLOAT'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\KGA_11_PM\Downloads\210910_WinMain (1)\Tank.cpp(89,36): warning C4244: '인수': 'FLOAT'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\KGA_11_PM\Downloads\210910_WinMain (1)\Tank.cpp(89,23): warning C4244: '인수': 'FLOAT'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\KGA_11_PM\Downloads\210910_WinMain (1)\Tank.cpp(101,44): warning C4244: '+=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  main.cpp
+C:\Users\KGA_11_PM\Downloads\210910_WinMain (1)\main.cpp(90,16): warning C4244: 'return': 'WPARAM'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  코드를 생성하고 있습니다...
+  210830_WinMain.vcxproj -> C:\Users\KGA_11_PM\Downloads\210910_WinMain (1)\x64\Debug\210830_WinMain.exe
