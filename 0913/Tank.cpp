@@ -52,7 +52,7 @@ void Tank::Update()
 	ammo.Update();
 
 	//AutoMove();
-	if (Singleton<KeyManager>::GetSingleton()->IsOnceKeyUp(VK_SPACE)) {
+	if (KeyManager::GetSingleton()->IsOnceKeyUp(VK_SPACE)) {
 		Fire();
 	}
 
