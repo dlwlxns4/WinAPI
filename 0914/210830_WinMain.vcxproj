@@ -142,7 +142,7 @@
     <ClCompile Include="Ammo.cpp" />
     <ClCompile Include="GameEntity.cpp" />
     <ClCompile Include="GameObject.cpp" />
-    <ClCompile Include="image.cpp" />
+    <ClCompile Include="Image.cpp" />
     <ClCompile Include="KeyManager.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MainGame.cpp" />
@@ -154,7 +154,7 @@
     <ClInclude Include="Config.h" />
     <ClInclude Include="GameEntity.h" />
     <ClInclude Include="GameObject.h" />
-    <ClInclude Include="image.h" />
+    <ClInclude Include="Image.h" />
     <ClInclude Include="KeyManager.h" />
     <ClInclude Include="MainGame.h" />
     <ClInclude Include="SingleTon.h" />

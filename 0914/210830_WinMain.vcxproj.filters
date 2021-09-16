@@ -45,7 +45,7 @@
     <ClCompile Include="Tank.cpp">
       <Filter>MainGame</Filter>
     </ClCompile>
-    <ClCompile Include="image.cpp">
+    <ClCompile Include="Image.cpp">
       <Filter>2D FrameWork</Filter>
     </ClCompile>
   </ItemGroup>
@@ -77,7 +77,7 @@
     <ClInclude Include="Tank.h">
       <Filter>MainGame</Filter>
     </ClInclude>
-    <ClInclude Include="image.h">
+    <ClInclude Include="Image.h">
       <Filter>2D FrameWork</Filter>
     </ClInclude>
   </ItemGroup>

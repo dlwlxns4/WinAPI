@@ -1,7 +1,7 @@
 #pragma once
 #include "Config.h"
 
-class image
+class Image
 {
 public:
 	enum ImageLoadType {
@@ -38,11 +38,11 @@ private:
 
 public:
 	HRESULT Init(int width, int height);						// 빈 비트맵 이미지 생성(LoadType : empty)
-	void Init(const char* fileName, int width, int height);	// (LoadType : File)
+	HRESULT Init(const char* fileName, int width, int height);	// (LoadType : File)
 	
 	void Release();											// 메모리 해제
 
-	void Render(HDC hdc);									// 이미지 데이터를 화면에 복사
+	void Render(HDC hdc, int destX, int destY);									// 이미지 데이터를 화면에 복사
 
 };
 

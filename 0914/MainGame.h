@@ -3,6 +3,7 @@
 #include "GameEntity.h"
 #include "Tank.h"
 #include "Ammo.h"
+#include "Image.h"
 
 // 우리가 구성할 게임 월드
 class MainGame : public GameEntity
@@ -24,6 +25,9 @@ private:
 	
 	// 탱크 (적 AI)
 	Tank enemyTank;
+
+	// 원빈 이미지 
+	Image imgWonBin;
 
 public:
 	void Init();

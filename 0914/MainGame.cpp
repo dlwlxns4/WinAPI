@@ -27,6 +27,10 @@ void MainGame::Init()
 	enemyTank.SetMoveSpeed(8.0f);
 
 	playerTank.SetTarget(&enemyTank);
+
+	if (!SUCCEEDED(imgWonBin.Init("../Image/bin.bmp", 1300, 933))) {
+		cout << "파일 로드에 실패 했다." << endl;
+	}
 }
 
 void MainGame::Update()
@@ -45,6 +49,7 @@ void MainGame::Render(HDC hdc)
 	wsprintf(text, "MousePosY : %d", mousePosY);
 	TextOut(hdc, 200, 40, text, strlen(text));
 
+	imgWonBin.Render(hdc, 0, 0);
 
 	playerTank.Render(hdc);
 
