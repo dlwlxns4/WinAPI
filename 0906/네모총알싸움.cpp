@@ -1,23 +1,3 @@
-
-
-/*
-	목표.
-	 1. 제어권이 없는 큰 네모가 좌로 이동 (속도 : 10)
-	 2. 위의 큰 네모가 좌측 벽에 부딪히면 방향이 바뀜 (좌 -> 우)
-	 3. 우측 벽에 부딪히면 방향이 바뀜 (우 -> 좌)
-	 4. 스페이스 바 입력 시 작은 네모가 미사일처럼 발사된다. (위쪽 방향으로)
-	 5. 작은 네모와 자동으로 움직이는 큰 네모가 부딪히면 둘 다 사라진다.
-	 6. 작은 네모는 화면을 벗어나면 다시 발사 가능하다.
-	 7. 위에서 움직이는 큰 네모는 일정시간마다 미사일을 발사한다.
-	 8. 밑에서 움직이는 큰 네모(플레이어)도 적의 미사일을 맞으면 화면에서 사라진다.
-	 9. 각자 HP 3씩이 주어진다.
-	 10. 코드 리팩토링
-
-	 Q1. 가만히 있을 때 화면이 갱신되게 하는 방법 ( Timer객체를 만들어서 해결 )
-	 Q2. 좌우측 벽에 부딪혔는지 확인하는 방법 ( 체크해야 하는 변수를 알고 있으므로 할 수 있다 )
-
-*/
-
 #include <Windows.h>
 
 // 전역변수
@@ -368,7 +348,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT iMessage, WPARAM wParam, LPARAM lParam)
 		//적 공격
 		EnemyAttack(nemos);
 
-
+#pragma region 내 충돌
 		// 충돌확인
 		if (IsCollision(nemos[NemoType::Small_2], nemos[NemoType::Big_1]))
 		{
@@ -387,12 +367,15 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT iMessage, WPARAM wParam, LPARAM lParam)
 				nemos[NemoType::Big_1].isAlive = false;
 			}
 		}
+#pragma endregion
+
+
 
 
 		FireBullet(nemos);
 
 
-
+#pragma region 적 충돌
 		// 충돌확인
 		if (IsCollision(nemos[NemoType::Small_1], nemos[NemoType::Big_2]))
 		{
@@ -410,6 +393,9 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT iMessage, WPARAM wParam, LPARAM lParam)
 				nemos[NemoType::Small_2].isAlive = false;
 			}
 		}
+#pragma endregion
+
+
 
 		InvalidateRect(g_hWnd, NULL, true);
 		break;
