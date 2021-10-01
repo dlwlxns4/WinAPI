@@ -22,18 +22,12 @@ private:
 	int clickedMousePosX;
 	int clickedMousePosY;
 
-	// 탱크 (플레이어)
-	Tank playerTank;
-	
-	// 탱크 (적 AI)
-	Tank enemyTank;
 
 	// 백버퍼
 	Image* backBuffer;
 
 	// 배경 이미지
 	Image* backGround;
-	vector<vector<Iori>> *enemyIori;
 
 public:
 	void Init();

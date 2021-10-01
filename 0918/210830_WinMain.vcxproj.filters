@@ -42,13 +42,7 @@
     <ClCompile Include="SceneManager.cpp">
       <Filter>2D Framework\Manager</Filter>
     </ClCompile>
-    <ClCompile Include="Ammo.cpp">
-      <Filter>MainGame</Filter>
-    </ClCompile>
     <ClCompile Include="MainGame.cpp">
-      <Filter>MainGame</Filter>
-    </ClCompile>
-    <ClCompile Include="Tank.cpp">
       <Filter>MainGame</Filter>
     </ClCompile>
     <ClCompile Include="Image.cpp">
@@ -80,13 +74,7 @@
     <ClInclude Include="Singleton.h">
       <Filter>2D Framework\Manager</Filter>
     </ClInclude>
-    <ClInclude Include="Ammo.h">
-      <Filter>MainGame</Filter>
-    </ClInclude>
     <ClInclude Include="MainGame.h">
-      <Filter>MainGame</Filter>
-    </ClInclude>
-    <ClInclude Include="Tank.h">
       <Filter>MainGame</Filter>
     </ClInclude>
     <ClInclude Include="Image.h">
