@@ -175,6 +175,7 @@ void Tank::Fire()
 		ammoPack[i].SetIsAlive(true);
 		ammoPack[i].SetPos(barrelEnd);	// 미사일 위치 변경
 		ammoPack[i].SetIsFire(true);	// 미사일 상태 변경
+		cout << barrelAngle << endl;
 		ammoPack[i].SetMoveAngle(barrelAngle); // 미사일 각도 변경
 
 		break;

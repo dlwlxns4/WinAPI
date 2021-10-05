@@ -40,52 +40,8 @@ void Ammo::Update()
 	if (isFire)
 	{
 		// 타겟이 있을 때만 유도 공식이 적용된다.
-		if (target)
-		{
-			float targetAngle = atan2f(-(target->GetPos().y - pos.y),
-				(target->GetPos().x - pos.x));
-
-			cout << "1. TargetAngle : " << targetAngle << endl;
-			cout << "1. MoveAngle : " << moveAngle << endl << endl;
-
-			float tempAngle;
-			float ratio = 9.0f;
-			if (GetDistance(target->GetPos(), pos) < 230.0f)
-			{
-				ratio = 3.0f;
-			}
-			if ((targetAngle - moveAngle) > PI)
-			{
-				tempAngle = ((targetAngle - PI2) - moveAngle) / ratio;
-				cout << "2_1. tempAngle : " << tempAngle << endl;
-			}
-			else if ((targetAngle - moveAngle) < -PI)
-			{
-				tempAngle = ((targetAngle + PI2) - moveAngle) / ratio;
-				cout << "2_2. tempAngle : " << tempAngle << endl;
-			}
-			else
-			{
-				tempAngle = (targetAngle - moveAngle) / ratio;
-				cout << "2_0. tempAngle : " << tempAngle << endl;
-			}
-
-			moveAngle += tempAngle;
-			if (moveAngle > PI2)
-			{
-				moveAngle -= PI2;
-			}
-			else if (moveAngle < -PI2)
-			{
-				moveAngle += PI2;
-			}
-
-			cout << "2. TargetAngle : " << targetAngle << endl;
-			cout << "2. MoveAngle : " << moveAngle << endl << endl;
 
 
-			//RotateToTarget(target->GetPos());
-		}
 
 		pos.x += cos(moveAngle) * moveSpeed;
 		pos.y -= sin(moveAngle) * moveSpeed;
@@ -206,9 +162,6 @@ void Ammo::IsCollision()
 	}
 }
 
-void Ammo::DestoryObject(int i, int j)
-{
-}
 
 Ammo::Ammo()
 {
