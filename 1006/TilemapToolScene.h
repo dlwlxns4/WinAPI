@@ -24,6 +24,10 @@ private:
 
 	SAMPLE_TILE_INFO	selectedSampleTile;
 
+	vector<SAMPLE_TILE_INFO> selectedSampleTiles;
+
+	int selectedIdX, selectedIdY;
+
 public:
 	virtual HRESULT Init() override;
 	virtual void Update() override;

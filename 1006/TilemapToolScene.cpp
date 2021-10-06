@@ -88,17 +88,33 @@ void TilemapToolScene::Update()
         if (KeyManager::GetSingleton()->IsOnceKeyDown(VK_LBUTTON))
         {
             int posX = g_ptMouse.x - sampleArea.left;
-            int selectedIdX = posX / TILE_SIZE;
+            selectedIdX = posX / TILE_SIZE;
 
             int posY = g_ptMouse.y - sampleArea.top;
-            int selectedIdY = posY / TILE_SIZE;
+            selectedIdY = posY / TILE_SIZE;
 
-            selectedSampleTile.frameX = 
+            cout << selectedIdX << "  " << selectedIdY << endl;
+        }
+    }
+    if (PtInRect(&(sampleArea), g_ptMouse))
+    {
+        if (KeyManager::GetSingleton()->IsOnceKeyUp(VK_LBUTTON))
+        {
+            int posX = g_ptMouse.x - sampleArea.left;
+            selectedIdX = posX / TILE_SIZE;
+
+            int posY = g_ptMouse.y - sampleArea.top;
+            selectedIdY = posY / TILE_SIZE;
+
+            selectedSampleTile.frameX =
                 sampleTileInfo[selectedIdY * SAMPLE_TILE_COUNT_X + selectedIdX].frameX;
             selectedSampleTile.frameY =
                 sampleTileInfo[selectedIdY * SAMPLE_TILE_COUNT_X + selectedIdX].frameY;
+
+            cout << selectedIdX << "  " << selectedIdY << endl;
         }
     }
+
 
     // 메인영역에서 선택된 샘플 정보로 수정
     for (int i = 0; i < TILE_COUNT_X * TILE_COUNT_Y; i++)

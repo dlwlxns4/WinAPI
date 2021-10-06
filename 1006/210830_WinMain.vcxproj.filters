@@ -22,9 +22,6 @@
     <Filter Include="MainGame">
       <UniqueIdentifier>{76040367-e9ec-435c-8de8-182b0e7703ca}</UniqueIdentifier>
     </Filter>
-    <Filter Include="MainGame\KOF_Player">
-      <UniqueIdentifier>{017d3e4b-8503-4767-b030-863a47c40ee6}</UniqueIdentifier>
-    </Filter>
     <Filter Include="MainGame\Enemy">
       <UniqueIdentifier>{602713da-07b3-49cb-9d52-7db0a54cea47}</UniqueIdentifier>
     </Filter>
@@ -65,9 +62,6 @@
     </ClCompile>
     <ClCompile Include="Image.cpp">
       <Filter>2D Framework</Filter>
-    </ClCompile>
-    <ClCompile Include="Iori.cpp">
-      <Filter>MainGame\KOF_Player</Filter>
     </ClCompile>
     <ClCompile Include="Enemy.cpp">
       <Filter>MainGame\Enemy</Filter>
@@ -139,9 +133,6 @@
     </ClInclude>
     <ClInclude Include="Image.h">
       <Filter>2D Framework</Filter>
-    </ClInclude>
-    <ClInclude Include="Iori.h">
-      <Filter>MainGame\KOF_Player</Filter>
     </ClInclude>
     <ClInclude Include="Enemy.h">
       <Filter>MainGame\Enemy</Filter>
