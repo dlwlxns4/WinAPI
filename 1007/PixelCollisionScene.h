@@ -18,6 +18,10 @@ private:
 
 	Tank* tank;
 
+	HPEN hpen;
+	HPEN hpenOld;
+	HBRUSH hbr;
+
 public:
 	virtual HRESULT Init() override;
 	virtual void Update() override;

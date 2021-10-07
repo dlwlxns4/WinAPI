@@ -21,6 +21,7 @@ private:
 	Image* img;
 
 	float moveSpeed;
+	float moveSpeed2;
 	float maxMoveSpeed;
 	float accel;
 

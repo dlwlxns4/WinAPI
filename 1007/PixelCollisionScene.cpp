@@ -70,7 +70,7 @@ void PixelCollisionScene::Update()
 		posBall.x -= 100 * TimerManager::GetSingleton()->GetDeltaTime();
 
 	}
-	if (KeyManager::GetSingleton()->IsStayKeyDown(VK_RIGHT))
+	if (KeyManager::GetSingleton()->IsStayKeyDown(VK_RIGHT)) 
 	{
 		color = GetPixel(mountain->GetMemDC(), posBall.x + 10, posBall.y + ball->GetHeight() / 2.0f - 5);
 
@@ -84,6 +84,29 @@ void PixelCollisionScene::Update()
 
 	tank->Update();
 
+
+	for (int i = 0; i < 2; i++)
+	{
+		if (tank->ammoPack[i].GetIsFire())
+		{
+			color = GetPixel(mountain->GetMemDC(), tank->ammoPack[i].GetPos().x, tank->ammoPack[i].GetPos().y);
+			int r = GetRValue(color);
+			int g = GetGValue(color);
+			int b = GetBValue(color);
+			if (!(r == 255 && g == 0 && b == 255))
+			{
+				hpen = CreatePen(PS_SOLID, 3, RGB(255, 0, 255)); // 선 스타일, 굵기, 색상 
+				hbr = CreateSolidBrush(RGB(255, 0, 255)); // 브러쉬 색
+				hpenOld = (HPEN)::SelectObject(mountain->GetMemDC(), (HGDIOBJ)hpen ); // 펜 선택 ::
+				hpenOld = (HPEN)::SelectObject(mountain->GetMemDC(), (HGDIOBJ)hbr); // 펜 선택 ::
+
+
+				tank->ammoPack[i].SetIsFire(false);
+				Ellipse(mountain->GetMemDC(), tank->ammoPack[i].GetPos().x-20, tank->ammoPack[i].GetPos().y-20, tank->ammoPack[i].GetPos().x + 20, tank->ammoPack[i].GetPos().y + 20);
+				
+			}
+		}
+	}
 	//if (KeyManager::GetSingleton()->IsOnceKeyDown(VK_RETURN))
 	//	cout << r << ", " << g << ", " << b << ", " << endl;
 }

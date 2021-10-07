@@ -35,8 +35,8 @@ HRESULT Ammo::Init()
 	}
 
 
-	moveSpeed = 0.0f;
-	maxMoveSpeed = 200.0f;
+	moveSpeed2 = 0.0f;
+	maxMoveSpeed = 500.0f;
 	accel = 98.1f;
 
 	return S_OK;
@@ -95,12 +95,14 @@ void Ammo::Update()
 
 		//	//RotateToTarget(target->GetPos());
 		//}
-		moveSpeed += (accel * TimerManager::GetSingleton()->GetDeltaTime());
-		moveSpeed = min(moveSpeed, maxMoveSpeed);
+
+		moveSpeed2 += (accel * TimerManager::GetSingleton()->GetDeltaTime());
+		moveSpeed2 = min(moveSpeed2, maxMoveSpeed);
 
 		pos.x += cos(moveAngle) * moveSpeed * TimerManager::GetSingleton()->GetDeltaTime();		// 프레임당 이동거리 -> 시간 당 이동거리
 		pos.y -= sin(moveAngle) * moveSpeed * TimerManager::GetSingleton()->GetDeltaTime();
-		//pos.y += moveSpeed * TimerManager::GetSingleton()->GetDeltaTime();
+		pos.y += moveSpeed2 * TimerManager::GetSingleton()->GetDeltaTime();
+		cout << moveSpeed2 << endl;
 
 		shape.left = pos.x - (bodySize / 2.0f);
 		shape.top = pos.y - (bodySize / 2.0f);
@@ -120,6 +122,10 @@ void Ammo::Update()
 		{
 			isFire = false;
 		}
+	}
+	else
+	{
+		moveSpeed2 = 0;
 	}
 }
 
