@@ -85,7 +85,7 @@ void PixelCollisionScene::Update()
 	tank->Update();
 
 
-	for (int i = 0; i < 2; i++)
+	for (int i = 0; i < 30; i++)
 	{
 		if (tank->ammoPack[i].GetIsFire())
 		{

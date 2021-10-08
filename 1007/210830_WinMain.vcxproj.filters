@@ -105,6 +105,9 @@
     <ClCompile Include="Tank.cpp">
       <Filter>MainGame</Filter>
     </ClCompile>
+    <ClCompile Include="AStarScene.cpp">
+      <Filter>MainGame\Scene</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Config.h">
@@ -177,6 +180,9 @@
       <Filter>MainGame\Scene</Filter>
     </ClInclude>
     <ClInclude Include="PixelCollisionScene.h">
+      <Filter>MainGame\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="AStarScene.h">
       <Filter>MainGame\Scene</Filter>
     </ClInclude>
   </ItemGroup>

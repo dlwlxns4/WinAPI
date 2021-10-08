@@ -141,6 +141,7 @@
   <ItemGroup>
     <ClCompile Include="Ammo.cpp" />
     <ClCompile Include="AmmoManager.cpp" />
+    <ClCompile Include="AStarScene.cpp" />
     <ClCompile Include="BattleScene.cpp" />
     <ClCompile Include="Button.cpp" />
     <ClCompile Include="ButtonFunction.cpp" />
@@ -165,6 +166,7 @@
   <ItemGroup>
     <ClInclude Include="Ammo.h" />
     <ClInclude Include="AmmoManager.h" />
+    <ClInclude Include="AStarScene.h" />
     <ClInclude Include="BattleScene.h" />
     <ClInclude Include="Button.h" />
     <ClInclude Include="ButtonFunction.h" />

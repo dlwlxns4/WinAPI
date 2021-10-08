@@ -2,6 +2,7 @@
 
 #include <iostream>
 #include <vector>
+#include <stack>
 
 using namespace std;
 
@@ -20,8 +21,13 @@ void CheckHuamn(vector<HUMAN_INFO>& humanDatas)
 	// 너비우선탐색, 깊이우선탐색
 
 	vector<HUMAN_INFO*> queue;
+	vector<HUMAN_INFO*> stack;
+
+
 	queue.push_back(&(humanDatas[0]));
 	humanDatas[0].isHuman = true;
+
+	
 
 	int answer;
 
@@ -47,7 +53,7 @@ void CheckHuamn(vector<HUMAN_INFO>& humanDatas)
 int main()
 {
 	FILE* fp = nullptr;
-	fopen_s(&fp, "마을1.txt", "r");
+	fopen_s(&fp, "마을2.txt", "r");
 
 
 	vector<HUMAN_INFO> humanDatas;

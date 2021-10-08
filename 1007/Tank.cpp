@@ -47,7 +47,7 @@ HRESULT Tank::Init(TankType type)
 
 	isAlive = true;
 
-	ammoCount = 2;
+	ammoCount = 30;
 	ammoPack = new Ammo[ammoCount];
 	// 미사일 초기화
 	for (int i = 0; i < ammoCount; i++)
